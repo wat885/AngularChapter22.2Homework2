@@ -1,5 +1,6 @@
-<div class="box">
-    <span>{{taskObj.name}}Component</span>
+<div class="box " (click)="taskSelect()" 
+[class.selected]= "isSelected">
+    <span>{{taskObj.name}}</span>
     <button (click)='delete()' class="button">
         Delete</button>
 </div>

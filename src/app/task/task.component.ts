@@ -10,7 +10,10 @@ export class TaskComponent implements OnInit {
   @Input() taskObj:Task;
   @Output() 
   deleteTask: EventEmitter<TaskComponent> = new EventEmitter();
+  @Output() 
+  taskClick: EventEmitter<TaskComponent> = new EventEmitter();
 
+  isSelected: boolean;
   constructor() { }
 
   ngOnInit(): void {
@@ -19,6 +22,10 @@ export class TaskComponent implements OnInit {
   delete(){
     // console.log('delete')
     this.deleteTask.emit(this)
+  }
+
+  taskSelect(){
+    this.taskClick.emit(this)
   }
 
 }

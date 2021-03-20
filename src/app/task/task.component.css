@@ -5,7 +5,7 @@
 }
 
 .button {
-    background-color: #008CBA; /* Green */
+    background-color: #4066AF; /* Green */
     border: none;
     color: white;
     padding: 7px 15px;
@@ -16,5 +16,9 @@
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10%;
+}
+
+.selected{
+    background-color: #729FE6;
 }
 

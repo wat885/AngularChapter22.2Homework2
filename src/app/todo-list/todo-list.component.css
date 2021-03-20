@@ -4,14 +4,18 @@
     padding: 10px;
     background: rgb(235, 231, 231);
 }
-.new-task{
+.new-task , .task-detail{
     border: 1px solid black;
     padding: 10px;
 }
 
+.task-detail{
+    margin-top: 5px;
+}
+
 
 .button {
-    background-color: #008CBA; /* Green */
+    background-color: #4066AF; /* Green */
     border: none;
     color: white;
     padding: 7px 15px;
